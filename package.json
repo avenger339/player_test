@@ -1,0 +1,18 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc ./src/less/css.less ./src/css/style.css",
+    "build": "npm run less &&  browserify -s VideoPlayer -t browserify-css ./src/index.js -o ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.1.0",
+    "browserify-css": "^0.14.0",
+    "less": "^3.0.0"
+  }
+}

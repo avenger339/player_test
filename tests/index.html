@@ -1,0 +1,13 @@
+<html>
+<body>
+<div id="player"></div>
+</body>
+<script type="text/javascript" src='../dist/index.js'></script>
+<script type="text/javascript">
+console.log(document.getElementById('player'))
+	var vplayer = new VideoPlayer(320, 240, document.getElementById('player'))
+	
+	vplayer.load('./video.mp4')
+	vplayer.play()
+</script>
+</html>
